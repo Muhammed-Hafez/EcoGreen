@@ -8,6 +8,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acumin:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
@@ -25,6 +29,9 @@
         /></a>
 
         <nav>
+          <a href="#" class="logo hidden"
+            ><img src="images/CP button.png" alt="LoGO"
+          /></a>
           <button class="burger-menu">
             <span></span>
             <span></span>
@@ -37,7 +44,6 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-
         <a href="#" class="logo hide"
           ><img src="images/CP button.png" alt="LoGO"
         /></a>
@@ -46,7 +52,38 @@
 
     <!-- Image Slider -->
     <div class="slider">
-      <img src="images/Header 1.png" alt="Slide 1" class="slide active" />
+      <div class="slide-container">
+        <div class="slide curve active">
+          <img src="images/a.jpg" alt="Slide 1" />
+        </div>
+        <div class="slide curve">
+          <img src="images/b.jpg" alt="Slide 2" />
+        </div>
+        <div class="slide curve">
+          <img src="images/c.jpg" alt="Slide 3" />
+        </div>
+        <div class="slide curve">
+          <img src="images/e.jpg" alt="Slide 4" />
+        </div>
+        <div class="slide curve">
+          <img src="images/f.jpg" alt="Slide 5" />
+        </div>
+        <div class="slide curve">
+          <img src="images/h.jpg" alt="Slide 6" />
+        </div>
+      </div>
+      <!-- النص الثابت هنا -->
+      <div class="slide-text">
+        <img src="images/Strip header 1.png" alt="" />
+      </div>
+      <div class="slide-img">
+        <img src="images/strip.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="strip">
+          <img src="images/strip.png" alt="" />
+        </div>
+      </div>
     </div>
 
     <!-- Home Section -->
@@ -61,7 +98,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 diam nonummy nibh.
               </p>
-              <button class="btn-primary">See More</button>
+              <a href="#almasa"
+                ><button class="btn-primary">See More</button></a
+              >
             </div>
           </div>
           <div class="image-container">
@@ -71,7 +110,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 diam nonummy nibh.
               </p>
-              <button class="btn-primary">See More</button>
+              <a href="#uni"><button class="btn-primary">See More</button></a>
             </div>
           </div>
           <div class="image-container">
@@ -81,7 +120,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 diam nonummy nibh.
               </p>
-              <button class="btn-primary">See More</button>
+              <a href="#eagle"><button class="btn-primary">See More</button></a>
             </div>
           </div>
           <div class="image-container">
@@ -91,7 +130,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 diam nonummy nibh.
               </p>
-              <button class="btn-primary">See More</button>
+              <a href="#masa"><button class="btn-primary">See More</button></a>
             </div>
           </div>
           <div class="image-container">
@@ -101,7 +140,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 diam nonummy nibh.
               </p>
-              <button class="btn-primary">See More</button>
+              <a href="#enterprise"
+                ><button class="btn-primary">See More</button></a
+              >
             </div>
           </div>
           <div class="image-container">
@@ -111,7 +152,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 diam nonummy nibh.
               </p>
-              <button class="btn-primary">See More</button>
+              <a href="#gate"><button class="btn-primary">See More</button></a>
             </div>
           </div>
           <div class="image-container">
@@ -121,7 +162,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 diam nonummy nibh.
               </p>
-              <button class="btn-primary">See More</button>
+              <a href="#hospital"
+                ><button class="btn-primary">See More</button></a
+              >
             </div>
           </div>
         </div>
@@ -130,21 +173,9 @@
     <section class="clients-section">
       <h2 class="clients-title">Our Clients</h2>
       <div class="clients-grid">
-        <img src="images/Almasa logo.png" alt="Client 1" class="client-logo" />
         <img
-          src="images/Alriyada logo.png"
-          alt="Client 2"
-          class="client-logo"
-        />
-        <img src="images/Eagle logo.png" alt="Client 3" class="client-logo" />
-        <img
-          src="images/Enterprise logo .png"
-          alt="Client 4"
-          class="client-logo"
-        />
-        <img
-          src="images/Alriyada logo.png"
-          alt="Client 5"
+          src="images/clients logos.png"
+          alt="Client 1"
           class="client-logo"
         />
       </div>
@@ -241,47 +272,38 @@
     <section id="testimonials" class="section">
       <div class="container">
         <h2 class="section-title">Testimonials</h2>
-        <div class="testimonial-carousel">
-          <div class="testimonial-item">
-            <img
-              src="images/dummy.png"
-              alt="Person 1"
-              class="testimonial-image"
-            />
-            <h3>John Doe</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+        <div class="testimonial-carousel-container">
+          <div class="testimonial-carousel">
+            <div class="testimonial-item">
+              <img
+                src="images/dummy.png"
+                alt="Person 1"
+                class="testimonial-image"
+              />
+              <h3>John Doe</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="testimonial-item">
+              <img
+                src="images/dummy2.png"
+                alt="Person 2"
+                class="testimonial-image"
+              />
+              <h3>Jane Smith</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="testimonial-item">
+              <img
+                src="images/dummy3.png"
+                alt="Person 3"
+                class="testimonial-image"
+              />
+              <h3>Michael Johnson</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
           </div>
-          <div class="testimonial-item">
-            <img
-              src="images/dummy.png"
-              alt="Person 2"
-              class="testimonial-image"
-            />
-            <h3>Jane Smith</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div class="testimonial-item">
-            <img
-              src="images/dummy.png"
-              alt="Person 3"
-              class="testimonial-image"
-            />
-            <h3>Michael Johnson</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <!-- Add more testimonial items as needed -->
+          <!-- أزرار التحكم -->
         </div>
-        <button class="carousel-prev" onclick="prevSlide()">&#10094;</button>
-        <button class="carousel-next" onclick="nextSlide()">&#10095;</button>
       </div>
     </section>
 
@@ -307,21 +329,9 @@
     <section class="clients-section">
       <h2 class="clients-title">Our Clients</h2>
       <div class="clients-grid">
-        <img src="images/Almasa logo.png" alt="Client 1" class="client-logo" />
         <img
-          src="images/Alriyada logo.png"
-          alt="Client 2"
-          class="client-logo"
-        />
-        <img src="images/Eagle logo.png" alt="Client 3" class="client-logo" />
-        <img
-          src="images/Enterprise logo .png"
-          alt="Client 4"
-          class="client-logo"
-        />
-        <img
-          src="images/Alriyada logo.png"
-          alt="Client 5"
+          src="images/clients logos.png"
+          alt="Client 1"
           class="client-logo"
         />
       </div>
@@ -333,9 +343,17 @@
         <h2>ECOGREEN ENGINEERING FACADE</h2>
 
         <div class="footer-content">
-          <div class="footer-section"></div>
           <div class="footer-section">
-            <h3>Find Us</h3>
+            <div class="footer-logo">
+              <img src="images/White Ecogreen -08.png" alt="" />
+              <p>
+                Transforming Visions into reality through seamless design,
+                fabrication, and instllation of modern buildings systems.
+              </p>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h2>Find Us</h2>
             <div class="social-links">
               <a
                 href="#"
@@ -370,9 +388,17 @@
             </div>
           </div>
           <div class="footer-section">
-            <h3>Contact Us</h3>
-            <p>Email: info@greenco.com</p>
-            <p>Phone: (555) 123-4567</p>
+            <div class="whatsup">
+              <h3>Contact Us on WhatsApp</h3>
+              <p>
+                <i class="fab fa-whatsapp"></i> +201068929247 / 021288890107
+              </p>
+            </div>
+            <p><i class="fab fa-google"></i> Tradingecogreen@gmail.com</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              Mabs.asdbsdfsflsdfdsfsdfghsdfg
+            </p>
           </div>
         </div>
         <div class="footer-bottom">
@@ -384,5 +410,6 @@
     <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/projects.js"></script>
     <script type="text/javascript" src="./js/slider.js"></script>
+    <script type="text/javascript" src="./js/testmonials.js"></script>
   </body>
 </html>

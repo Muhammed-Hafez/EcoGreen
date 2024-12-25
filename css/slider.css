@@ -1,44 +1,137 @@
-/* Slider styles */
+/* Slider Container */
 .slider {
   position: relative;
-  height: 700px;
-  margin-top: 4rem;
+  width: 100%;
+  height: 950px; /* يمكن تعديل الارتفاع حسب الحاجة */
   overflow: hidden;
 }
 
+/* Styling for images */
+.slider img {
+  width: 100%;
+
+  object-fit: cover; /* يحافظ على تناسب الصورة داخل الإطار */
+}
+
+/* Container for text on top of the slider */
+.slide-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  /* خلفية تدرج لوني */
+
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem; /* حجم الخط */
+  font-weight: bold; /* جعل النص عريض */
+  text-shadow: 4px 4px 4px rgba(15, 14, 14, 0.5); /* تأثير الظل للنص */
+  z-index: 3; /* النص يكون فوق الصور */
+  text-align: center;
+  width: 100%;
+}
+
+.slide-text img {
+  margin-top: 1rem;
+  width: 70%;
+  padding: 1rem;
+}
+
+.strip {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem; /* حجم الخط */
+  font-weight: bold; /* جعل النص عريض */
+  text-shadow: 4px 4px 4px rgba(15, 14, 14, 0.5); /* تأثير الظل للنص */
+  z-index: 3; /* النص يكون فوق الصور */
+  text-align: center;
+  width: 100%;
+}
+
+.strip img {
+  width: 70%;
+}
+
+.curve img {
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+}
+
+/* Slide Container (hold all the slides) */
+.slide-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Slides Styles */
 .slide {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
   object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  z-index: 1;
 }
 
-.slide img {
-  width: 100%;
-  height: auto; /* لضمان عرض الصور بشكل صحيح */
-}
-
+/* Active Slide */
 .slide.active {
   opacity: 1;
+  z-index: 2; /* الصورة النشطة تكون في الأعلى */
+  transform: translateY(0); /* الصورة النشطة تظهر في الإطار */
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
+/* Next Slide */
+.slide.next {
+  opacity: 1;
+  z-index: 1; /* الصورة القادمة تكون أسفل الصورة النشطة */
+  transform: translateY(100%); /* الصورة القادمة تظهر تدريجيًا */
+}
+
+/* Previous Slide */
+.slide.previous {
+  opacity: 0;
+  z-index: 0;
+  transform: translateY(-100%); /* الصورة السابقة تنزلق لأسفل */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
   .slider {
-    height: 400px; /* تقليل ارتفاع الـ Slider على الشاشات الصغيرة */
+    height: 350px; /* تقليل الارتفاع على الشاشات الصغيرة */
   }
 
-  .slide img {
-    object-fit: contain; /* لمنع قطع الصور */
+  .slide-text {
+    font-size: 18px; /* تقليل حجم الخط على الشاشات الصغيرة */
+  }
+
+  .curve img {
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+  }
+
+  .strip img {
+    width: 60%;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 1024px) {
   .slider {
-    height: 250px; /* تقليل ارتفاع الـ Slider أكثر على الشاشات الصغيرة جدًا */
+    height: 700px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    height: 300px; /* تقليل الارتفاع أكثر على الشاشات الأصغر */
+  }
+
+  .slide-text {
+    font-size: 16px; /* تقليل حجم الخط أكثر على الشاشات الأصغر */
   }
 }

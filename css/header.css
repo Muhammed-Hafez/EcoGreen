@@ -18,6 +18,16 @@
   height: 100px;
 }
 
+.hidden {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 .nav-list {
   margin-top: 22px;
   display: flex;
@@ -57,6 +67,14 @@
 @media (max-width: 768px) {
   .burger-menu {
     display: block;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .hide {
+    display: none;
   }
 
   .nav-list {

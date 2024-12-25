@@ -1,58 +1,35 @@
-.section {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.container {
-  max-width: 1200px;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+.testimonial-carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* يمكن تعديلها حسب حجم السلايدر المطلوب */
 }
 
 .testimonial-carousel {
   display: flex;
-  overflow: hidden;
-  position: relative;
+  transition: transform 0.5s ease;
 }
 
 .testimonial-item {
   min-width: 100%;
   box-sizing: border-box;
-  transition: transform 0.5s ease;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
 }
 
 .testimonial-image {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin-bottom: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid green;
 }
 
-.carousel-prev,
-.carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.carousel-prev {
+.prev-btn {
   left: 10px;
 }
 
-.carousel-next {
+.next-btn {
   right: 10px;
-}
-
-.carousel-prev:hover,
-.carousel-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
 }

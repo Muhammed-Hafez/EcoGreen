@@ -50,6 +50,11 @@
   position: relative;
 }
 
+.project-subtitle {
+  color: #0dbc33;
+  font-size: 2rem;
+}
+
 .project-title::after {
   content: "";
   position: absolute;
@@ -199,30 +204,32 @@
 /* Clients section */
 .clients-section {
   text-align: center;
-  padding: 4rem 0;
+  padding: 2rem 0;
   background: #f8f9fa;
 }
 
 .clients-title {
   font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 3rem;
-}
-
-.clients-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 3rem;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(
+    to right,
+    #0e440e,
+    #bfff00
+  ); /* تدرج لوني من الأخضر الفاتح إلى الأخضر الداكن */
+  -webkit-background-clip: text; /* لتطبيق التدرج على النص */
+  color: transparent;
 }
 
 .client-logo {
-  max-width: 120px;
+  width: 100%;
+  padding: 1rem;
+
   filter: grayscale(100%);
   transition: filter 0.3s ease;
+}
+
+.client-logo img {
+  width: 100%;
 }
 
 .client-logo:hover {

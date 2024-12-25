@@ -1,101 +1,114 @@
 // Projects data
 const projects = [
   {
-    title: "Eco-Friendly Office Complex",
-    description:
-      "A state-of-the-art office complex featuring sustainable architecture and green energy solutions. The building incorporates solar panels, rainwater harvesting, and natural ventilation systems.",
-    location: "San Francisco, CA",
-    year: "2023",
-    client: "Tech Innovations Inc.",
+    title: "Al Masa Hotel",
+    subtitle: "(Ain ElSokhna)",
+    id: "almasa",
+    description: "",
+    location: "",
+    year: "",
+    client: "",
     images: [
-      "./images/Carosell/001.png",
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c",
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72",
+      "./images/swr elprojects/Almasa hotel/1.jpg",
+      "./images/swr elprojects/Almasa hotel/2.jpg",
+      "./images/swr elprojects/Almasa hotel/3.jpg",
+      "./images/swr elprojects/Almasa hotel/4.jpg",
     ],
   },
   {
-    title: "Sustainable Housing Development",
+    title: "Al Riyada University",
+    subtitle: "(Sadat City)",
+    id: "uni",
     description:
-      "A residential community designed with sustainability at its core. Features include energy-efficient homes, community gardens, and integrated renewable energy systems.",
-    location: "Portland, OR",
-    year: "2023",
-    client: "Green Living Communities",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu aliquet augue. Duis imperdiet nisi odio, eu rhoncus mauris feugiat facilisis. Nam ornare, elit sed tempor lobortis, metus ligula semper nisl, et malesuada metus nibh ac ipsum. Sed consectetur nisi in lacus euismod ullamcorper. ",
+    location: "",
+    year: "",
+    client: "",
     images: [
-      "https://images.unsplash.com/photo-1494526585095-c41746248156",
-      "https://images.unsplash.com/photo-1494475673543-6a6a27143fc8",
-      "https://images.unsplash.com/photo-1494526585095-c41746248156",
-      "https://images.unsplash.com/photo-1494475673543-6a6a27143fc8",
+      "./images/swr elprojects/Alriyada Uni/1.jpg",
+      "./images/swr elprojects/Alriyada Uni/2.jpg",
+      "./images/swr elprojects/Alriyada Uni/3.jpg",
+      "./images/swr elprojects/Alriyada Uni/4.jpg",
     ],
   },
   {
-    title: "Green Energy Research Center",
+    title: "Masa Villa",
+    subtitle: "",
+    id: "masa",
     description:
-      "A cutting-edge research facility dedicated to developing new renewable energy technologies. The building itself serves as a living laboratory for sustainable practices.",
-    location: "Boston, MA",
-    year: "2022",
-    client: "Renewable Energy Institute",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu aliquet augue. Duis imperdiet nisi odio, eu rhoncus mauris feugiat facilisis. Nam ornare, elit sed tempor lobortis, metus ligula semper nisl, et malesuada metus nibh ac ipsum. Sed consectetur nisi in lacus euismod ullamcorper. ",
+    location: "",
+    year: "",
+    client: "",
     images: [
-      "https://images.unsplash.com/photo-1497366216548-37526070297c",
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2",
+      "./images/swr elprojects/Alriyada Uni/1.jpg",
+      "./images/swr elprojects/Alriyada Uni/2.jpg",
+      "./images/swr elprojects/Alriyada Uni/3.jpg",
+      "./images/swr elprojects/Alriyada Uni/4.jpg",
     ],
   },
   {
-    title: "Urban Vertical Garden",
+    title: "Eagle Main building",
+    subtitle: "",
+    id: "eagle",
     description:
-      "An innovative vertical garden project transforming urban spaces into green havens. Incorporates advanced hydroponics and smart irrigation systems.",
-    location: "Chicago, IL",
-    year: "2022",
-    client: "City Green Initiative",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu aliquet augue. Duis imperdiet nisi odio, eu rhoncus mauris feugiat facilisis. Nam ornare, elit sed tempor lobortis, metus ligula semper nisl, et malesuada metus nibh ac ipsum. Sed consectetur nisi in lacus euismod ullamcorper. ",
+    location: "",
+    year: "",
+    client: "",
     images: [
-      "https://images.unsplash.com/photo-1518005020951-eccb494ad742",
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e",
-      "https://images.unsplash.com/photo-1520262454473-a1a82276a574",
-      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e",
+      "./images/swr elprojects/Eagle/1.jpg",
+      "./images/swr elprojects/Eagle/2.jpg",
+      "./images/swr elprojects/Eagle/3.jpg",
+      "./images/swr elprojects/Eagle/4.jpg",
     ],
   },
   {
-    title: "Eco-Tourism Resort",
+    title: "Egypt German Hospital",
+    subtitle: "",
+    id: "hospital",
     description:
-      "A luxury resort designed to minimize environmental impact while providing an immersive nature experience. Features include solar power and sustainable water management.",
-    location: "Costa Rica",
-    year: "2022",
-    client: "EcoStay Resorts",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu aliquet augue. Duis imperdiet nisi odio, eu rhoncus mauris feugiat facilisis. Nam ornare, elit sed tempor lobortis, metus ligula semper nisl, et malesuada metus nibh ac ipsum. Sed consectetur nisi in lacus euismod ullamcorper. ",
+    location: "",
+    year: "",
+    client: "",
     images: [
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef",
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09",
-      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e",
+      "./images/swr elprojects/Hospital/1.jpg",
+      "./images/swr elprojects/Hospital/2.jpg",
+      "./images/swr elprojects/Hospital/3.jpg",
+      "./images/swr elprojects/Hospital/4.jpg",
     ],
   },
   {
-    title: "Smart Green School",
+    title: "Enterprise Holding",
+    subtitle: "",
+    id: "enterprise",
     description:
-      "An educational facility that combines sustainable architecture with smart technology. Features include natural lighting systems and interactive learning spaces.",
-    location: "Seattle, WA",
-    year: "2021",
-    client: "Future Education Foundation",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu aliquet augue. Duis imperdiet nisi odio, eu rhoncus mauris feugiat facilisis. Nam ornare, elit sed tempor lobortis, metus ligula semper nisl, et malesuada metus nibh ac ipsum. Sed consectetur nisi in lacus euismod ullamcorper. ",
+    location: "",
+    year: "",
+    client: "",
     images: [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c",
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
+      "./images/swr elprojects/Enterprise/1.jpg",
+      "./images/swr elprojects/Enterprise/2.jpg",
+      "./images/swr elprojects/Enterprise/3.jpg",
+      "./images/swr elprojects/Enterprise/4.jpg",
     ],
   },
   {
-    title: "Renewable Energy Park",
+    title: "Main Gate Project",
+    subtitle: "",
+    id: "gate",
     description:
-      "A public park that generates its own energy through various renewable sources. Includes educational exhibits and interactive demonstrations of green technology.",
-    location: "Austin, TX",
-    year: "2021",
-    client: "Green Energy Alliance",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu aliquet augue. Duis imperdiet nisi odio, eu rhoncus mauris feugiat facilisis. Nam ornare, elit sed tempor lobortis, metus ligula semper nisl, et malesuada metus nibh ac ipsum. Sed consectetur nisi in lacus euismod ullamcorper. ",
+    location: "",
+    year: "",
+    client: "",
     images: [
-      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e",
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09",
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef",
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
+      "./images/swr elprojects/Eagle/1.jpg",
+      "./images/swr elprojects/Eagle/2.jpg",
+      "./images/swr elprojects/Eagle/3.jpg",
+      "./images/swr elprojects/Eagle/4.jpg",
     ],
   },
 ];
@@ -104,9 +117,13 @@ const projects = [
 function createProjectHTML(project, index) {
   const specificIndex = index % 2 === 0 ? 0 : 2; // يختار الأولى في المشاريع الزوجية والثالثة في الفردية
   return `
-        <div class="project-item">
+        <div class="project-item" id="${project.id}">
             <div class="project-content">
                 <h2 class="project-title">${project.title}</h2>
+                        <h4 class="project-subtitle">${
+                          project.subtitle
+                        }</h4> <!-- العنوان الفرعي -->
+
                 <p class="project-description">${project.description}</p>
                 <dl class="project-details">
                     <dt>Location:</dt>

@@ -12,6 +12,10 @@
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 30px;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right, #0e440e, #bfff00);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .image-grid {
@@ -148,6 +152,17 @@
   .contact-wrapper p {
     font-size: 1.2rem;
   }
+
+  .about-card h3 {
+    color: rgb(24, 156, 57);
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .about-card p {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 .contact-wrapper .btn-primary {
@@ -179,8 +194,35 @@
 }
 
 .footer-section h3 {
-  text-align: center;
-  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.footer-section {
+  width: 100%;
+  gap: 1rem;
+}
+
+.footer-logo {
+  width: 100%;
+  margin-top: -2.5rem;
+}
+
+.footer-logo img {
+  height: 70px;
+}
+
+.footer-section p {
+  display: flex; /* يجعل النص والأيقونة في نفس الخط */
+  align-items: center; /* محاذاة الأيقونة مع النص عموديًا */
+  margin-bottom: 10px; /* مسافة بين العناصر */
+}
+
+.footer-section i {
+  width: 24px; /* حجم الأيقونة */
+  height: 24px; /* نفس حجم الأيقونة */
+  margin-right: 10px; /* مسافة بين الأيقونة والنص */
+  color: #ebf0eb; /* لون الأيقونات */
 }
 
 .social-links {
@@ -188,6 +230,7 @@
   justify-content: center;
   gap: 1rem;
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 .social-links a {
@@ -209,5 +252,32 @@
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .footer {
+    background-image: linear-gradient(
+      to bottom,
+      rgb(32, 182, 9),
+      rgb(8, 112, 8)
+    );
+  }
+
+  .footer-section h3 {
+    text-align: center;
+  }
+
+  .footer-section p {
+    display: block;
+  }
+
+  .footer h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-logo {
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
   }
 }
