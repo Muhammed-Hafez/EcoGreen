@@ -9,7 +9,7 @@ const projects = [
     year: "",
     client: "",
     images: [
-      "./images/Carosell/001.png",
+      "./images/Swr elprojects/Almasa hotel/1.jpg",
       "./images/Swr elprojects/Almasa hotel/2.jpg",
       "./images/Swr elprojects/Almasa hotel/3.jpg",
       "./images/Swr elprojects/Almasa hotel/4.jpg",
@@ -25,10 +25,10 @@ const projects = [
     year: "",
     client: "",
     images: [
-      "./images/swr elprojects/Alriyada Uni/1.jpg",
-      "./images/swr elprojects/Alriyada Uni/2.jpg",
-      "./images/swr elprojects/Alriyada Uni/3.jpg",
-      "./images/swr elprojects/Alriyada Uni/4.jpg",
+      "./images/Swr elprojects/Alriyada Uni/1.jpg",
+      "./images/Swr elprojects/Alriyada Uni/2.jpg",
+      "./images/Swr elprojects/Alriyada Uni/3.jpg",
+      "./images/Swr elprojects/Alriyada Uni/4.jpg",
     ],
   },
   {
@@ -41,10 +41,10 @@ const projects = [
     year: "",
     client: "",
     images: [
-      "./images/swr elprojects/Alriyada Uni/1.jpg",
-      "./images/swr elprojects/Alriyada Uni/2.jpg",
-      "./images/swr elprojects/Alriyada Uni/3.jpg",
-      "./images/swr elprojects/Alriyada Uni/4.jpg",
+      "./images/Swr elprojects/Alriyada Uni/1.jpg",
+      "./images/Swr elprojects/Alriyada Uni/2.jpg",
+      "./images/Swr elprojects/Alriyada Uni/3.jpg",
+      "./images/Swr elprojects/Alriyada Uni/4.jpg",
     ],
   },
   {
@@ -57,10 +57,10 @@ const projects = [
     year: "",
     client: "",
     images: [
-      "./images/swr elprojects/Eagle/1.jpg",
-      "./images/swr elprojects/Eagle/2.jpg",
-      "./images/swr elprojects/Eagle/3.jpg",
-      "./images/swr elprojects/Eagle/4.jpg",
+      "./images/Swr elprojects/Eagle/1.jpg",
+      "./images/Swr elprojects/Eagle/2.jpg",
+      "./images/Swr elprojects/Eagle/3.jpg",
+      "./images/Swr elprojects/Eagle/4.jpg",
     ],
   },
   {
@@ -73,10 +73,10 @@ const projects = [
     year: "",
     client: "",
     images: [
-      "./images/swr elprojects/Hospital/1.jpg",
-      "./images/swr elprojects/Hospital/2.jpg",
-      "./images/swr elprojects/Hospital/3.jpg",
-      "./images/swr elprojects/Hospital/4.jpg",
+      "./images/Swr elprojects/Hospital/1.jpg",
+      "./images/Swr elprojects/Hospital/2.jpg",
+      "./images/Swr elprojects/Hospital/3.jpg",
+      "./images/Swr elprojects/Hospital/4.jpg",
     ],
   },
   {
@@ -89,10 +89,10 @@ const projects = [
     year: "",
     client: "",
     images: [
-      "./images/swr elprojects/Enterprise/1.jpg",
-      "./images/swr elprojects/Enterprise/2.jpg",
-      "./images/swr elprojects/Enterprise/3.jpg",
-      "./images/swr elprojects/Enterprise/4.jpg",
+      "./images/Swr elprojects/Enterprise/1.jpg",
+      "./images/Swr elprojects/Enterprise/2.jpg",
+      "./images/Swr elprojects/Enterprise/3.jpg",
+      "./images/Swr elprojects/Enterprise/4.jpg",
     ],
   },
   {
@@ -105,10 +105,10 @@ const projects = [
     year: "",
     client: "",
     images: [
-      "./images/swr elprojects/Eagle/1.jpg",
-      "./images/swr elprojects/Eagle/2.jpg",
-      "./images/swr elprojects/Eagle/3.jpg",
-      "./images/swr elprojects/Eagle/4.jpg",
+      "./images/Swr elprojects/Eagle/1.jpg",
+      "./images/Swr elprojects/Eagle/2.jpg",
+      "./images/Swr elprojects/Eagle/3.jpg",
+      "./images/Swr elprojects/Eagle/4.jpg",
     ],
   },
 ];
