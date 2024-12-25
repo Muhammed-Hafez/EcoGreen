@@ -32,7 +32,7 @@
 
 .slide-text img {
   margin-top: 1rem;
-  width: 70%;
+  width: 90%;
   padding: 1rem;
 }
 
@@ -55,8 +55,8 @@
 }
 
 .curve img {
-  border-bottom-right-radius: 150px;
-  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
 }
 
 /* Slide Container (hold all the slides) */
@@ -116,8 +116,8 @@
   }
 
   .curve img {
-    border-bottom-right-radius: 80px;
-    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
   }
 
   .strip img {

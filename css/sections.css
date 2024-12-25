@@ -13,7 +13,7 @@
   font-size: 2.5rem;
   margin-bottom: 30px;
   margin-bottom: 0.5rem;
-  background: linear-gradient(to right, #0e440e, #bfff00);
+  background: linear-gradient(to right, #459e55, #dab03d);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -48,12 +48,13 @@
 }
 
 .btn-primary {
+  font-style: italic;
   margin: 10px 0 0;
   padding: 10px 20px;
   font-size: 1rem;
-  color: #0b7336;
+  color: #0e9646;
+  border: 1px solid #0b7336;
   background-color: #ffffff;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -94,7 +95,7 @@
 .about-card h3 {
   color: rgb(24, 156, 57);
   font-size: 2rem;
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 /* Products Section */
@@ -133,7 +134,6 @@
 
 .contact-wrapper img {
   width: 100%;
-  height: 300px;
   object-fit: cover;
   border-radius: 0.5rem;
 }
@@ -150,13 +150,13 @@
 
 @media (max-width: 768px) {
   .contact-wrapper p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .about-card h3 {
     color: rgb(24, 156, 57);
     font-size: 1.5rem;
-    font-weight: bolder;
+    font-weight: 900;
   }
 
   .about-card p {
@@ -249,6 +249,10 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.footer-mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
@@ -256,11 +260,19 @@
   }
 
   .footer {
-    background-image: linear-gradient(
-      to bottom,
-      rgb(32, 182, 9),
-      rgb(8, 112, 8)
-    );
+    background-image: url(/images/Footer\ bg.png);
+  }
+
+  .desk {
+    display: none;
+  }
+
+  .footer-mobile {
+    display: block;
+  }
+
+  .footer-mobile i {
+    text-align: center;
   }
 
   .footer-section h3 {
@@ -272,7 +284,7 @@
   }
 
   .footer h2 {
-    font-size: 1.2rem;
+    display: none;
   }
 
   .footer-logo {

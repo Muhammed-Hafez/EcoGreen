@@ -1,6 +1,6 @@
 /* Projects section */
 .projects-section {
-  padding: 4rem 0;
+  padding: 1rem 0;
   background-color: var(--light-color);
 }
 
@@ -48,6 +48,7 @@
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   position: relative;
+  font-weight: 900;
 }
 
 .project-subtitle {
@@ -213,8 +214,8 @@
   margin-bottom: 0.5rem;
   background: linear-gradient(
     to right,
-    #0e440e,
-    #bfff00
+    #459e55,
+    #dab03d
   ); /* تدرج لوني من الأخضر الفاتح إلى الأخضر الداكن */
   -webkit-background-clip: text; /* لتطبيق التدرج على النص */
   color: transparent;
