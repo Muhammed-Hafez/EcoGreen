@@ -101,9 +101,14 @@
 }
 
 /* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .slider {
+    height: 700px;
+  }
+}
 @media (max-width: 768px) {
   .slider {
-    height: 350px; /* تقليل الارتفاع على الشاشات الصغيرة */
+    height: 550px; /* تقليل الارتفاع على الشاشات الصغيرة */
   }
 
   .slide-text {
@@ -117,12 +122,6 @@
 
   .strip img {
     width: 60%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .slider {
-    height: 700px;
   }
 }
 
