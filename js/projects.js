@@ -9,10 +9,10 @@ const projects = [
     year: "",
     client: "",
     images: [
-      "images/swr elprojects/Almasa hotel/1.jpg",
-      "images/swr elprojects/Almasa hotel/2.jpg",
-      "images/swr elprojects/Almasa hotel/3.jpg",
-      "images/swr elprojects/Almasa hotel/4.jpg",
+      "./images/Swr elprojects/Almasa hotel/1.jpg",
+      "./images/Swr elprojects/Almasa hotel/2.jpg",
+      "./images/Swr elprojects/Almasa hotel/3.jpg",
+      "./images/Swr elprojects/Almasa hotel/4.jpg",
     ],
   },
   {
