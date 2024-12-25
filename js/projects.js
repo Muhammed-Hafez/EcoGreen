@@ -9,7 +9,7 @@ const projects = [
     year: "",
     client: "",
     images: [
-      "./images/Swr elprojects/Almasa hotel/1.jpg",
+      "./images/Carosell/001.png",
       "./images/Swr elprojects/Almasa hotel/2.jpg",
       "./images/Swr elprojects/Almasa hotel/3.jpg",
       "./images/Swr elprojects/Almasa hotel/4.jpg",
