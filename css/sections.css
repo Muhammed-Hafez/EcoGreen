@@ -39,10 +39,6 @@
   object-fit: cover;
 }
 
-.project-info {
-  padding: 20px;
-}
-
 .project-info p {
   margin: 10px 0;
 }
@@ -65,6 +61,7 @@
 }
 
 /* About Section */
+/* البداية: إضافة بعض التنسيقات الأساسية */
 .about-head {
   display: flex;
   flex-direction: row;
@@ -72,60 +69,102 @@
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
+  opacity: 0; /* يجعل العنصر غير مرئي في البداية */
+  transform: translateX(50px); /* تحريك العنصر إلى اليمين */
+  transition: opacity 1s ease, transform 1s ease; /* إضافة تأثير الحركة */
+}
+
+hr {
+  border: 1px solid #0b7336;
 }
 
 .about-head img {
   height: 48px;
 }
+
 .about-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  opacity: 0; /* جعل العناصر غير مرئية في البداية */
+  transform: translateY(50px); /* تحريك العناصر من الأسفل */
+  transition: opacity 1s ease, transform 1s ease; /* إضافة تأثير الحركة */
 }
 
 .about-card {
   background-color: white;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* إخفاء العنصر */
+  transform: translateX(-50px); /* تحريك العنصر إلى اليسار */
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .about-card h3 {
   color: rgb(24, 156, 57);
   font-size: 2rem;
   font-weight: 900;
-  font-family: "Acumin", sans-serif; /* تعيين خط أكومين للنص */
+  font-family: "Acumin", sans-serif;
+  opacity: 0; /* إخفاء النص */
+  transform: translateX(50px); /* تحريك النص إلى اليمين */
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+/* تفعيل التأثيرات عند ظهور العناصر */
+.about-head.visible,
+.about-grid.visible,
+.about-card.visible,
+.about-card h3.visible {
+  opacity: 1;
+  transform: translateX(0); /* إلغاء التحريك عند التفعيل */
 }
 
 /* Products Section */
+/* إعدادات الشبكة (Grid) */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  opacity: 0; /* يجعل المصفوفة غير مرئية عند تحميل الصفحة */
+  transform: translateY(50px); /* تحريك المصفوفة للأعلى عند تحميل الصفحة */
+  transition: opacity 1s ease, transform 1s ease; /* تأثير انسيابي */
 }
 
+/* إعدادات البطاقة (Card) */
 .product-card {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* إخفاء البطاقة عند تحميل الصفحة */
+  transform: translateY(20px); /* تحريك البطاقة من الأسفل */
+  transition: opacity 1s ease, transform 1s ease; /* تأثير انسيابي */
 }
 
+/* الصورة داخل البطاقة */
 .product-card img {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
 
+/* العنوان داخل البطاقة */
 .product-card h3 {
   color: var(--primary-color);
   padding: 1rem;
 }
 
+/* الوصف داخل البطاقة */
 .product-card p {
   padding: 0 1rem 1rem;
-  font-family: "Acumin", sans-serif; /* تعيين خط أكومين للنص */
+  font-family: "Acumin", sans-serif;
+}
+
+/* تفعيل التأثير عند ظهور العنصر */
+.product-grid.visible,
+.product-card.visible {
+  opacity: 1;
+  transform: translateY(0); /* إلغاء التحريك عند التفعيل */
 }
 
 /* Contact Section */
@@ -139,11 +178,20 @@
   object-fit: cover;
 }
 
+.btn-secondry {
+  font-style: italic;
+  margin: 10px 0 0;
+  padding: 15px 20px;
+  font-size: 1rem;
+  color: #0e9646;
+  cursor: pointer;
+}
+
 .contact-wrapper p {
   position: absolute;
   font-size: 3rem;
   color: #fff;
-  font-weight: bolder;
+  font-weight: 900;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -152,6 +200,7 @@
 @media (max-width: 768px) {
   .contact-wrapper p {
     font-size: 1rem;
+    font-weight: 900;
   }
 
   .about-card h3 {
@@ -166,14 +215,31 @@
   }
 }
 
-.contact-wrapper .btn-primary {
+.contact-wrapper .btn-secondry {
   position: absolute;
   top: 60%;
-  font-size: 14px;
+  font-size: 20px;
   left: 50%;
-
-  padding-inline: 10px;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper .btn-secondry {
+    position: absolute;
+    top: 60%;
+    font-size: 14px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn-secondry {
+    font-style: italic;
+    margin: 10px 0 0;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: #0e9646;
+    cursor: pointer;
+  }
 }
 
 /* Footer */
@@ -213,7 +279,7 @@
 }
 
 .footer-logo img {
-  height: 70px;
+  height: 50px;
 }
 
 .footer-section p {
@@ -249,8 +315,13 @@
 
 .footer-bottom {
   text-align: center;
-  padding-top: 2rem;
+  padding: 1rem;
+  background-color: #fff;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  color: black;
 }
 
 .footer-mobile {
@@ -285,6 +356,7 @@
 
   .footer-section p {
     display: block;
+    font-size: 14px;
   }
 
   .footer h2 {
