@@ -6,6 +6,10 @@
   height: 300px; /* Adjust based on your image size */
 }
 
+.test {
+  background-color: #f2f2f3;
+}
+
 .testimonial-carousel-container {
   background-color: aliceblue;
 }

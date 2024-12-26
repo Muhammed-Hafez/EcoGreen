@@ -119,11 +119,12 @@ function createProjectHTML(project, index) {
   return `
         <div class="project-item" id="${project.id}">
             <div class="project-content">
-                <h2 class="project-title">${project.title}</h2>
-                        <h4 class="project-subtitle">${
-                          project.subtitle
-                        }</h4> <!-- العنوان الفرعي -->
-
+            <div class="project-head">
+                <h2 class="project-title"> ${project.title}<br/> <span>${
+    project.subtitle
+  } </h2>
+                        
+                  </div>
                 <p class="project-description">${project.description}</p>
                 <dl class="project-details">
                     <dt>Location:</dt>

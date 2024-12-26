@@ -1,11 +1,11 @@
 .curve-cont {
   border-top-left-radius: 120px;
-  background-color: rgb(252, 244, 244);
+  background-color: #f2f2f3;
 }
 
 .sliderC {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   width: 100%;
 }
 
@@ -14,15 +14,13 @@
 }
 
 .sliderC img {
-  width: 100%;
   height: 250px;
   padding: 2rem;
 }
 
 @media (max-width: 768px) {
   .sliderC img {
-    width: 100%;
-    height: 150px;
+    height: 100px;
     padding: 1rem;
   }
   .sliderC {
@@ -45,7 +43,6 @@
   }
 
   .sliderC img {
-    width: 100%;
   }
   .sliderC {
     display: flex;

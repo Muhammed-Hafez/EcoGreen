@@ -66,8 +66,8 @@ nav {
 
 .burger-menu span {
   display: block;
-  width: 25px;
-  height: 3px;
+  width: 20px;
+  height: 2px;
   background-color: rgb(14, 131, 74);
   margin: 5px 0;
   transition: 0.3s;

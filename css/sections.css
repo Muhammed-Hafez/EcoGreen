@@ -11,7 +11,7 @@
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 30px;
   margin-bottom: 0.5rem;
   background: linear-gradient(to right, #459e55, #dab03d);
@@ -75,7 +75,7 @@
 }
 
 hr {
-  width: 80%; /* عرض الخط */
+  width: 20%; /* عرض الخط */
   margin: 1rem auto; /* مساحة حول الخط */
   border: 1px solid #0b7336; /* اللون والسمك */
   transform-origin: center; /* نقطة الأصل للحركة */
