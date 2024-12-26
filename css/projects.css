@@ -72,7 +72,7 @@
 .project-description {
   color: var(--text-color);
   line-height: 1.8;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .project-details {
