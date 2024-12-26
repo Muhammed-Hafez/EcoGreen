@@ -4,6 +4,10 @@
   margin-bottom: -1.5rem;
 }
 
+.sclients {
+  padding: 1.5rem;
+}
+
 .sliderC {
   display: flex;
   gap: 2rem;
@@ -15,7 +19,7 @@
 }
 
 .sliderC img {
-  height: 250px;
+  height: 200px;
   padding: 2rem;
 }
 
