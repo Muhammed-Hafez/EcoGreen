@@ -73,6 +73,10 @@ nav {
   transition: 0.3s;
 }
 
+.CPlogo-mob {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .burger-menu {
     display: block;
@@ -84,6 +88,19 @@ nav {
 
   .mobile-logo {
     display: block;
+  }
+
+  .CPlogo {
+    display: none;
+  }
+
+  .CPlogo-mob {
+    display: block;
+  }
+
+  .CPlogo-mob img {
+    width: 80px;
+    height: 40px;
   }
 
   .CPlogo img {
