@@ -1,28 +1,26 @@
-let currentIndex = 0;
-const totalSlides = document.querySelectorAll(".testimonial-item").length;
+let currentSlideT = 0;
+const slidesT = document.querySelectorAll(".testimonial-item");
+const totalSlides = slidesT.length;
 
-function moveSlide(direction) {
-  currentIndex += direction;
-
-  // إذا وصلنا إلى آخر شريحة، ننتقل مباشرة إلى الشريحة الأولى
-  if (currentIndex >= totalSlides) {
-    currentIndex = 0;
-  }
-
-  // تحريك السلايدر إلى الشريحة الحالية
-  const carousel = document.querySelector(".testimonial-carousel");
-  carousel.style.transition = "none"; // تعطيل الانتقال عند العودة للبداية
-  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-  // إعادة تمكين الانتقال بعد التحرك مباشرةً إلى أول شريحة
-  setTimeout(() => {
-    carousel.style.transition = "transform 0.5s ease"; // إضافة تأثير الانتقال مجددًا
-  }, 50);
+function showSlide(index) {
+  // Reset all slidesT
+  slidesT.forEach((slide, i) => {
+    slide.classList.remove("active", "prev");
+    if (i === index) {
+      slide.classList.add("active");
+    } else if (i === (index - 1 + totalSlides) % totalSlides) {
+      slide.classList.add("prev");
+    }
+  });
 }
 
-// التكرار التلقائي كل 5 ثوانٍ
-setInterval(() => {
-  moveSlide(1);
-}, 5000);
+function moveToNextSlide() {
+  currentSlideT = (currentSlideT + 1) % totalSlides;
+  showSlide(currentSlideT);
+}
 
-// التحكم اليدوي للأزرار
+// Initialize the first slide
+showSlide(currentSlideT);
+
+// Auto-slide every 3 seconds
+setInterval(moveToNextSlide, 5000);

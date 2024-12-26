@@ -83,21 +83,21 @@
 .slide.active {
   opacity: 1;
   z-index: 2; /* الصورة النشطة تكون في الأعلى */
-  transform: translateY(0); /* الصورة النشطة تظهر في الإطار */
+  transform: translateX(0); /* الصورة النشطة تظهر في الإطار */
 }
 
 /* Next Slide */
 .slide.next {
   opacity: 1;
   z-index: 1; /* الصورة القادمة تكون أسفل الصورة النشطة */
-  transform: translateY(100%); /* الصورة القادمة تظهر تدريجيًا */
+  transform: translateX(100%); /* الصورة القادمة تظهر تدريجيًا */
 }
 
 /* Previous Slide */
 .slide.previous {
   opacity: 0;
   z-index: 0;
-  transform: translateY(-100%); /* الصورة السابقة تنزلق لأسفل */
+  transform: translateX(-100%); /* الصورة السابقة تنزلق لأسفل */
 }
 
 /* Media Queries for Responsiveness */

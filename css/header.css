@@ -18,6 +18,10 @@
   height: 100px;
 }
 
+.hide {
+  display: none;
+}
+
 .hidden {
   display: none;
 }
@@ -32,7 +36,7 @@ nav {
   display: flex;
   list-style: none;
   z-index: 1000;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .nav-list a {
@@ -68,12 +72,16 @@ nav {
     display: block;
   }
 
+  .desktop-logo {
+    display: none;
+  }
+
   .hidden {
     display: block;
   }
 
   .hide {
-    display: none;
+    display: block;
   }
 
   .nav-list {
@@ -82,7 +90,7 @@ nav {
     top: 4rem;
     left: 0;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: aliceblue;
     flex-direction: column;
     padding: 1rem 0;
     text-align: center;
@@ -93,6 +101,6 @@ nav {
   }
 
   .logo img {
-    height: 50px;
+    height: 40px;
   }
 }

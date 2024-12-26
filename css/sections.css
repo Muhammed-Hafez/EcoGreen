@@ -30,7 +30,6 @@
   overflow: hidden;
   text-align: center;
   background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   object-fit: cover;
 }
 
@@ -55,7 +54,6 @@
   color: #0e9646;
   border: 1px solid #0b7336;
   background-color: #ffffff;
-  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -114,6 +112,7 @@
 
 .product-card img {
   width: 100%;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -135,7 +134,6 @@
 .contact-wrapper img {
   width: 100%;
   object-fit: cover;
-  border-radius: 0.5rem;
 }
 
 .contact-wrapper p {
@@ -167,8 +165,11 @@
 
 .contact-wrapper .btn-primary {
   position: absolute;
-  top: 70%;
+  top: 60%;
+  font-size: 14px;
   left: 50%;
+
+  padding-inline: 10px;
   transform: translate(-50%, -50%);
 }
 
