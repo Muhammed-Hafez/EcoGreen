@@ -122,6 +122,7 @@ nav {
 
   .mobile-logo {
     display: block;
+    background-color: red;
   }
 
   .CPlogo img {
