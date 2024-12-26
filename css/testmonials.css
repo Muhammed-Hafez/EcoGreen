@@ -8,6 +8,7 @@
 
 .test {
   background-color: #f2f2f3;
+  padding: 1rem;
 }
 
 .testimonial-carousel-container {
@@ -22,6 +23,11 @@
   height: 100%;
   opacity: 0;
   transition: all 1s ease-in-out;
+}
+
+.testimonial-item img {
+  padding: 1rem;
+  padding-right: 0;
 }
 
 .testimonial-item.active {

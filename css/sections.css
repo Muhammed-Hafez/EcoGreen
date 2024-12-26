@@ -164,7 +164,6 @@ hr.visible {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   opacity: 0; /* إخفاء البطاقة عند تحميل الصفحة */
   transform: translateY(20px); /* تحريك البطاقة من الأسفل */
   transition: opacity 1s ease, transform 1s ease; /* تأثير انسيابي */
