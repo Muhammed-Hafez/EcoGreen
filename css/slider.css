@@ -89,26 +89,34 @@
 /* Next Slide */
 .slide.next {
   opacity: 1;
-  z-index: 1; /* الصورة القادمة تكون أسفل الصورة النشطة */
+  z-index: 0; /* الصورة القادمة تكون أسفل الصورة النشطة */
   transform: translateX(100%); /* الصورة القادمة تظهر تدريجيًا */
 }
 
 /* Previous Slide */
 .slide.previous {
-  opacity: 0;
-  z-index: 0;
+  opacity: 1;
+  z-index: 1;
   transform: translateX(-100%); /* الصورة السابقة تنزلق لأسفل */
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
   .slider {
-    height: 700px;
+    height: 550px;
+  }
+
+  .strip {
+    top: 80%;
   }
 }
 @media (max-width: 768px) {
   .slider {
-    height: 550px; /* تقليل الارتفاع على الشاشات الصغيرة */
+    height: 400px; /* تقليل الارتفاع على الشاشات الصغيرة */
+  }
+
+  .strip {
+    top: 88%;
   }
 
   .slide-text {
@@ -127,7 +135,11 @@
 
 @media (max-width: 480px) {
   .slider {
-    height: 300px; /* تقليل الارتفاع أكثر على الشاشات الأصغر */
+    height: 220px; /* تقليل الارتفاع أكثر على الشاشات الأصغر */
+  }
+
+  .strip {
+    top: 90%;
   }
 
   .slide-text {
