@@ -239,6 +239,38 @@ function initProjects() {
   document.querySelectorAll(".project-item").forEach((item) => {
     observer.observe(item);
   });
+
+  // Swipe events for mobile
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  document.querySelectorAll(".project-gallery").forEach((gallery) => {
+    gallery.addEventListener("touchstart", (e) => {
+      touchStartX = e.touches[0].clientX;
+    });
+
+    gallery.addEventListener("touchend", (e) => {
+      touchEndX = e.changedTouches[0].clientX;
+      handleSwipe();
+    });
+  });
+
+  // Handle swipe direction
+  function handleSwipe() {
+    const swipeThreshold = 50; // الحد الأدنى لتحريك الصورة
+    if (touchEndX - touchStartX > swipeThreshold) {
+      // Swipe right: Show previous image
+      const project = projects[currentProject];
+      currentImage =
+        (currentImage - 1 + project.images.length) % project.images.length;
+      showImage(currentProject, currentImage);
+    } else if (touchStartX - touchEndX > swipeThreshold) {
+      // Swipe left: Show next image
+      const project = projects[currentProject];
+      currentImage = (currentImage + 1) % project.images.length;
+      showImage(currentProject, currentImage);
+    }
+  }
 }
 
 // Initialize when DOM is loaded

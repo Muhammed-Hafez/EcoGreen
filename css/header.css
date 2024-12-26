@@ -104,3 +104,41 @@ nav {
     height: 40px;
   }
 }
+
+@media (max-width: 480) {
+  .burger-menu {
+    display: block;
+  }
+
+  .desktop-logo {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: aliceblue;
+    flex-direction: column;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+}
