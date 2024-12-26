@@ -1,8 +1,9 @@
 /* Home Section */
 
 .section {
-  padding: 50px 0;
+  padding: 10px 0;
   text-align: center;
+  font-family: "Acumin", sans-serif; /* تعيين خط أكومين للنص */
 }
 
 .container {
@@ -94,6 +95,7 @@
   color: rgb(24, 156, 57);
   font-size: 2rem;
   font-weight: 900;
+  font-family: "Acumin", sans-serif; /* تعيين خط أكومين للنص */
 }
 
 /* Products Section */
@@ -123,6 +125,7 @@
 
 .product-card p {
   padding: 0 1rem 1rem;
+  font-family: "Acumin", sans-serif; /* تعيين خط أكومين للنص */
 }
 
 /* Contact Section */
