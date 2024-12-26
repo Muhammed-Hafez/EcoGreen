@@ -113,7 +113,7 @@ nav {
 
 @media (max-width: 480px) {
   .burger-menu {
-    display: inline;
+    display: block;
   }
 
   .desktop-logo {
@@ -121,12 +121,17 @@ nav {
   }
 
   .mobile-logo {
-    display: inline;
-    background-color: rgb(52, 22, 150);
+    display: block;
+    background-color: rgb(22, 150, 73);
+  }
+
+  .mobile-logo img {
+    width: 80px;
+    height: 40px;
   }
 
   .CPlogo img {
-    width: 100%;
+    width: 80px;
     height: 40px;
   }
 
