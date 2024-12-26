@@ -21,10 +21,6 @@
   transition: all 1s ease-in-out;
 }
 
-.testimonial-item img {
-  padding-right: 0;
-}
-
 .testimonial-item.active {
   left: 0;
   opacity: 1;
@@ -33,4 +29,11 @@
 .testimonial-item.prev {
   left: -100%;
   opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .testimonial-item img {
+    width: 100%;
+    height: 300px;
+  }
 }
