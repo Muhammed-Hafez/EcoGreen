@@ -42,7 +42,7 @@ nav {
   display: flex;
   list-style: none;
   z-index: 1000;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
 .nav-list a {
@@ -122,7 +122,6 @@ nav {
 
   .mobile-logo {
     display: block;
-    background-color: rgb(22, 150, 73);
   }
 
   .mobile-logo img {
@@ -140,6 +139,7 @@ nav {
     position: absolute;
     top: 4rem;
     left: 0;
+    gap: 0.5rem;
     width: 100%;
     background-color: aliceblue;
     flex-direction: column;
