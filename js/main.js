@@ -73,6 +73,26 @@ $(document).ready(function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const hrElements = document.querySelectorAll("hr");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate"); // إضافة الفئة
+          observer.unobserve(entry.target); // التوقف عن المراقبة بعد التفعيل
+        }
+      });
+    },
+    {
+      threshold: 0.5, // نسبة ظهور العنصر (50%)
+    }
+  );
+
+  hrElements.forEach((hr) => observer.observe(hr));
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {

@@ -75,7 +75,24 @@
 }
 
 hr {
-  border: 1px solid #0b7336;
+  width: 80%; /* عرض الخط */
+  margin: 1rem auto; /* مساحة حول الخط */
+  border: 1px solid #0b7336; /* اللون والسمك */
+  transform-origin: center; /* نقطة الأصل للحركة */
+  opacity: 0; /* الخط غير مرئي افتراضيًا */
+  transform: scaleX(0); /* تصغير الخط افتراضيًا */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* الفئة المفعلة */
+hr.animate {
+  opacity: 1; /* إظهار الخط */
+  transform: scaleX(1); /* عرض الخط بالكامل */
+}
+
+hr.visible {
+  opacity: 1; /* إظهار الخط */
+  transform: scaleX(1); /* استعادة العرض الكامل */
 }
 
 .about-head img {
@@ -108,6 +125,18 @@ hr {
   opacity: 0; /* إخفاء النص */
   transform: translateX(50px); /* تحريك النص إلى اليمين */
   transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.about-card::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 0%;
+  background-color: rgb(24, 156, 57);
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.5s ease-in-out;
 }
 
 /* تفعيل التأثيرات عند ظهور العناصر */
