@@ -209,7 +209,7 @@ span {
     width: 95%;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1800px) {
   .clients-title h4 {
     font-size: 2rem;
   }

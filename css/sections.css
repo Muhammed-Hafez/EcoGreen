@@ -290,6 +290,7 @@ hr.visible {
 .footer-section h3 {
   font-size: 1.4rem;
   text-align: left;
+  margin-top: -1.2rem;
 }
 
 .footer-section {
@@ -308,13 +309,11 @@ hr.visible {
 
 .footer-section p {
   display: flex; /* يجعل النص والأيقونة في نفس الخط */
-  align-items: center; /* محاذاة الأيقونة مع النص عموديًا */
   margin-bottom: 10px; /* مسافة بين العناصر */
 }
 
 .footer-section i {
-  width: 24px; /* حجم الأيقونة */
-  height: 24px; /* نفس حجم الأيقونة */
+  height: 4px;
   margin-right: 10px; /* مسافة بين الأيقونة والنص */
   color: #ebf0eb; /* لون الأيقونات */
 }
@@ -322,19 +321,14 @@ hr.visible {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 1rem;
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: -0.5rem;
 }
 
 .social-links a {
   text-align: center;
   color: white;
   text-decoration: none;
-}
-
-.footer p {
-  text-align: center;
 }
 
 .footer-bottom {
@@ -362,6 +356,9 @@ hr.visible {
     background-image: url(/images/Footer\ bg.png);
   }
 
+  .footer p {
+    text-align: center;
+  }
   .desk {
     display: none;
   }
@@ -391,6 +388,12 @@ hr.visible {
     width: 100%;
     margin-top: 5px;
     text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact-wrapper img {
+    width: 80%;
   }
 }
 
