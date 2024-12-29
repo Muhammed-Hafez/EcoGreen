@@ -175,6 +175,18 @@
     height: 1500px; /* تقليل الارتفاع على الشاشات الصغيرة */
   }
 
+  .container {
+    max-width: 1300px;
+  }
+
+  .footer p {
+    text-align: left;
+  }
+
+  .clients-title h4 {
+    font-size: 4rem;
+  }
+
   .strip {
     top: 85%;
   }
@@ -195,7 +207,7 @@
 
 @media (min-width: 3840px) {
   .slider {
-    height: 1900px; /* تقليل الارتفاع على الشاشات الصغيرة */
+    height: 2100px; /* تقليل الارتفاع على الشاشات الصغيرة */
   }
 
   .strip {

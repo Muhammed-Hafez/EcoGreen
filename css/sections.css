@@ -6,10 +6,6 @@
   font-family: "Acumin", sans-serif; /* تعيين خط أكومين للنص */
 }
 
-.container {
-  max-width: 1200px;
-}
-
 .section-title {
   font-size: 2rem;
   margin-bottom: 30px;
@@ -280,7 +276,7 @@ hr.visible {
 .footer h2 {
   text-align: center;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-top: -2rem;
 }
 

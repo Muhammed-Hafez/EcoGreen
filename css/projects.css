@@ -209,6 +209,23 @@ span {
     width: 95%;
   }
 }
+@media (max-width: 1440px) {
+  .clients-title h4 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .clients-title h4 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Clients section */
 .clients-section {
@@ -218,7 +235,6 @@ span {
 }
 
 .clients-title {
-  font-size: 1rem;
   text-align: center;
   background: linear-gradient(
     to right,
@@ -227,10 +243,6 @@ span {
   ); /* تدرج لوني من الأخضر الفاتح إلى الأخضر الداكن */
   -webkit-background-clip: text; /* لتطبيق التدرج على النص */
   color: transparent;
-}
-
-.clients-title h4 {
-  font-size: 2rem;
 }
 
 .client-logo {
@@ -250,10 +262,6 @@ body {
 .clients-section {
   padding: 50px 0;
   text-align: center;
-}
-
-.clients-title {
-  font-size: 2.5rem;
 }
 
 .logoSlider-wrapper {
@@ -280,11 +288,5 @@ body {
   }
   100% {
     transform: translateX(-50%);
-  }
-}
-
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
   }
 }
