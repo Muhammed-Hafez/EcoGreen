@@ -2,7 +2,7 @@
 .slider {
   position: relative;
   width: 100%;
-  height: 950px; /* يمكن تعديل الارتفاع حسب الحاجة */
+  height: 850px; /* يمكن تعديل الارتفاع حسب الحاجة */
   overflow: hidden;
 }
 
@@ -38,7 +38,7 @@
 
 .strip {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -107,7 +107,7 @@
   }
 
   .strip {
-    top: 80%;
+    top: 85%;
   }
 }
 @media (max-width: 768px) {
