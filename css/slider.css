@@ -146,3 +146,72 @@
     font-size: 16px; /* تقليل حجم الخط أكثر على الشاشات الأصغر */
   }
 }
+
+@media (min-width: 1920px) {
+  .slider {
+    height: 1100px; /* تقليل الارتفاع على الشاشات الصغيرة */
+  }
+
+  .strip {
+    top: 88%;
+  }
+
+  .slide-text {
+    font-size: 18px; /* تقليل حجم الخط على الشاشات الصغيرة */
+  }
+
+  .curve img {
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  .strip img {
+    width: 70%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .slider {
+    height: 1500px; /* تقليل الارتفاع على الشاشات الصغيرة */
+  }
+
+  .strip {
+    top: 85%;
+  }
+
+  .slide-text {
+    font-size: 18px; /* تقليل حجم الخط على الشاشات الصغيرة */
+  }
+
+  .curve img {
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  .strip img {
+    width: 70%;
+  }
+}
+
+@media (min-width: 3840px) {
+  .slider {
+    height: 1900px; /* تقليل الارتفاع على الشاشات الصغيرة */
+  }
+
+  .strip {
+    top: 88%;
+  }
+
+  .slide-text {
+    font-size: 18px; /* تقليل حجم الخط على الشاشات الصغيرة */
+  }
+
+  .curve img {
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  .strip img {
+    width: 70%;
+  }
+}

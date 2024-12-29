@@ -397,3 +397,26 @@ hr.visible {
     text-align: center;
   }
 }
+
+@media (min-width: 1920px) {
+  .contact-wrapper .btn-secondry {
+    position: absolute;
+    top: 60%;
+    font-size: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .contact-wrapper img {
+    width: 50%;
+  }
+
+  .btn-secondry {
+    font-style: italic;
+    margin: 10px 0 0;
+    padding: 10px 25px;
+    font-size: 1rem;
+    color: #0e9646;
+    cursor: pointer;
+  }
+}
