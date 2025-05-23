@@ -59,6 +59,7 @@
 
 /* About Section */
 /* البداية: إضافة بعض التنسيقات الأساسية */
+
 .about-head {
   display: flex;
   flex-direction: row;
