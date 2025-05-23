@@ -17,12 +17,16 @@ body {
   font-family: "Acumin", sans-serif; /* تعيين خط أكومين للنص */
   line-height: 1.6;
   color: var(--text-color);
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 0.2rem;
 }
 
 .section {
@@ -49,8 +53,5 @@ body {
   background-color: var(--secondary-color);
 }
 
-@media (,ax-width: 2650px) {
-  .container {
-    max-width: 1500px;
-  }
+@media (max-width: 2650px) {
 }

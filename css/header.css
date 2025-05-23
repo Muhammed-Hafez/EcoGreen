@@ -3,7 +3,7 @@
   width: 100%;
   top: 0;
   z-index: 1000;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .header .container {
@@ -15,12 +15,12 @@
 
 .CPlogo img {
   width: 100%;
-  height: 100px;
+  margin-left: 1rem;
 }
 
 .desktop-logo img {
   width: 100%;
-  height: 100px;
+  margin-right: -6rem;
 }
 
 .mobile-logo {
@@ -35,20 +35,22 @@
 nav {
   display: flex;
   flex-direction: row;
+  margin-left: 1rem;
+  margin-top: 0.8rem;
 }
 
 .nav-list {
-  margin-top: 22px;
   display: flex;
+  flex-direction: row;
   list-style: none;
   z-index: 1000;
-  gap: 1.5rem;
+  gap: 10px;
 }
 
 .nav-list a {
   color: #459e55;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: color 0.3s ease;
   font-weight: 100;
 }
@@ -79,6 +81,10 @@ nav {
 }
 
 @media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
   .burger-menu {
     display: block;
   }
@@ -102,6 +108,8 @@ nav {
   .CPlogo-mob img {
     width: 80px;
     height: 40px;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .CPlogo img {
@@ -133,6 +141,7 @@ nav {
 @media (max-width: 480px) {
   .burger-menu {
     display: block;
+    margin-top: -1.4rem;
   }
 
   .desktop-logo {
@@ -144,8 +153,9 @@ nav {
   }
 
   .mobile-logo img {
-    width: 80px;
-    height: 40px;
+    width: 140px;
+    height: auto;
+    margin-top: -1.4rem;
   }
 
   .CPlogo img {

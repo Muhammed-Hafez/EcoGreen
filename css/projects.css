@@ -6,7 +6,6 @@
 }
 
 .project-container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -44,9 +43,13 @@
   justify-content: center;
 }
 
+.project-item {
+  align-items: start; /* يخلّي الصور والنص يبتدوا من نفس الخط */
+}
+
 .project-title {
   color: #459e55;
-  font-size: 3rem;
+  font-size: 1.4rem;
   font-family: "Acumin", sans-serif; /* تعيين خط أكومين للنص */
   position: relative;
   font-weight: 900;
@@ -78,9 +81,8 @@ span {
 }
 
 .project-details {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-details dt {
@@ -89,13 +91,25 @@ span {
 }
 
 .project-gallery {
+  margin-top: 1.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
 }
 
-.project-gallery :nth-child(4) {
+.gallery-item.highlight-right img {
   border-bottom-right-radius: 50px;
+}
+
+.gallery-item.highlight-left img {
+  border-bottom-left-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .gallery-item.highlight-left img {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 50px;
+  }
 }
 
 .gallery-item {
@@ -162,8 +176,8 @@ span {
 }
 
 .lightbox-button {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
+  background-color: rgba(112, 245, 139, 0.707);
+  color: rgb(81, 54, 11);
   border: none;
   padding: 1rem;
   cursor: pointer;
@@ -172,7 +186,7 @@ span {
 }
 
 .lightbox-button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(80, 174, 97, 0.832);
 }
 
 .lightbox-close {
@@ -251,12 +265,6 @@ span {
 
   filter: grayscale(100%);
   transition: filter 0.3s ease;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 .clients-section {

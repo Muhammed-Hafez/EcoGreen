@@ -4,10 +4,11 @@ const projects = [
     title: "Al Masa Hotel",
     subtitle: "(Ain ElSokhna)",
     id: "almasa",
-    description: "",
-    location: "",
-    year: "",
-    client: "",
+    location: "El-Ain Shoknha",
+    scopeOfWork:
+      "Structure glazing, Aluminum cladding, Aluminum Doors and windows, Skylight",
+    mainContractor: "Almasa Hotel Nasr City",
+    client: "Almasa Group",
     images: [
       "./images/Swr elprojects/Almasa hotel/1.jpg",
       "./images/Swr elprojects/Almasa hotel/2.jpg",
@@ -19,27 +20,25 @@ const projects = [
     title: "Al Riyada University",
     subtitle: "(Sadat City)",
     id: "uni",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu aliquet augue. Duis imperdiet nisi odio, eu rhoncus mauris feugiat facilisis. Nam ornare, elit sed tempor lobortis, metus ligula semper nisl, et malesuada metus nibh ac ipsum. Sed consectetur nisi in lacus euismod ullamcorper. ",
-    location: "",
-    year: "",
-    client: "",
+    location: "Sadat City",
+    scopeOfWork: "Curtain wall, Aluminum cladding, Aluminum Doors and windows",
+    mainContractor: "Madinet Elsadat Co. for Private University",
+    client: "Al Riyada University",
     images: [
       "./images/Swr elprojects/Alriyada Uni/1.jpg",
       "./images/Swr elprojects/Alriyada Uni/2.jpg",
-      "./images/Swr elprojects/Alriyada Uni/3.jpg",
       "./images/Swr elprojects/Alriyada Uni/4.jpg",
+      "./images/Swr elprojects/Alriyada Uni/3.jpg",
     ],
   },
   {
     title: "Masa Villa",
     subtitle: "",
     id: "masa",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu aliquet augue. Duis imperdiet nisi odio, eu rhoncus mauris feugiat facilisis. Nam ornare, elit sed tempor lobortis, metus ligula semper nisl, et malesuada metus nibh ac ipsum. Sed consectetur nisi in lacus euismod ullamcorper. ",
-    location: "",
-    year: "",
-    client: "",
+    location: "El-Ain Shoknha",
+    scopeOfWork: "Structure glazing, Aluminum Doors and windows, Skylight",
+    mainContractor: "Almasa Hotel Nasr City",
+    client: "Private Owner",
     images: [
       "./images/Swr elprojects/Alriyada Uni/1.jpg",
       "./images/Swr elprojects/Alriyada Uni/2.jpg",
@@ -51,11 +50,11 @@ const projects = [
     title: "Eagle Main building",
     subtitle: "",
     id: "eagle",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu aliquet augue. Duis imperdiet nisi odio, eu rhoncus mauris feugiat facilisis. Nam ornare, elit sed tempor lobortis, metus ligula semper nisl, et malesuada metus nibh ac ipsum. Sed consectetur nisi in lacus euismod ullamcorper. ",
-    location: "",
-    year: "",
-    client: "",
+    location: "Sheraton Helioples - Cairo",
+    scopeOfWork:
+      "Structure glazing, Aluminum cladding, Aluminum Doors and windows",
+    mainContractor: "Eagle Contracting",
+    client: "Eagle Group",
     images: [
       "./images/Swr elprojects/Eagle/1.jpg",
       "./images/Swr elprojects/Eagle/2.jpg",
@@ -67,11 +66,11 @@ const projects = [
     title: "Egypt German Hospital",
     subtitle: "",
     id: "hospital",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu aliquet augue. Duis imperdiet nisi odio, eu rhoncus mauris feugiat facilisis. Nam ornare, elit sed tempor lobortis, metus ligula semper nisl, et malesuada metus nibh ac ipsum. Sed consectetur nisi in lacus euismod ullamcorper. ",
-    location: "",
-    year: "",
-    client: "",
+    location: "6th October City, Giza",
+    scopeOfWork:
+      "Canopy, Aluminum cladding, Aluminum Doors and windows, Skylight, Structure glazing",
+    mainContractor: "Egypt German Hospital",
+    client: "Egypt German Hospital Admin",
     images: [
       "./images/Swr elprojects/Hospital/1.jpg",
       "./images/Swr elprojects/Hospital/2.jpg",
@@ -83,11 +82,11 @@ const projects = [
     title: "Enterprise Holding",
     subtitle: "",
     id: "enterprise",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu aliquet augue. Duis imperdiet nisi odio, eu rhoncus mauris feugiat facilisis. Nam ornare, elit sed tempor lobortis, metus ligula semper nisl, et malesuada metus nibh ac ipsum. Sed consectetur nisi in lacus euismod ullamcorper. ",
-    location: "",
-    year: "",
-    client: "",
+    location: "Sheraton Helioples - Cairo",
+    scopeOfWork:
+      "Structure glazing, Aluminum cladding, Aluminum Doors and windows",
+    mainContractor: "Enterprise Holding",
+    client: "Enterprise Holding Group",
     images: [
       "./images/Swr elprojects/Enterprise/1.jpg",
       "./images/Swr elprojects/Enterprise/2.jpg",
@@ -99,11 +98,10 @@ const projects = [
     title: "Main Gate Project",
     subtitle: "",
     id: "gate",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu aliquet augue. Duis imperdiet nisi odio, eu rhoncus mauris feugiat facilisis. Nam ornare, elit sed tempor lobortis, metus ligula semper nisl, et malesuada metus nibh ac ipsum. Sed consectetur nisi in lacus euismod ullamcorper. ",
-    location: "",
-    year: "",
-    client: "",
+    location: "Sadat City",
+    scopeOfWork: "Curtain wall, Aluminum cladding, Aluminum Doors and windows",
+    mainContractor: "Madinet Elsadat Co. for Private University",
+    client: "Al Riyada University",
     images: [
       "./images/Swr elprojects/Eagle/1.jpg",
       "./images/Swr elprojects/Eagle/2.jpg",
@@ -114,44 +112,77 @@ const projects = [
 ];
 
 // Create project HTML
+// Define which images to highlight for each project
+const highlightedImages = [
+  { right: { large: 3, small: 0 } },
+  { left: { large: 3, small: 0 } },
+  { right: { large: 3, small: 2 } },
+  { left: { large: 3, small: 1 } },
+  { right: { large: 3, small: 0 } },
+  { left: { large: 3, small: 2 } },
+  { right: { large: 3, small: 1 } },
+];
+
 function createProjectHTML(project, index) {
-  const specificIndex = index % 2 === 0 ? 0 : 2; // يختار الأولى في المشاريع الزوجية والثالثة في الفردية
+  const highlight = highlightedImages[index] || {};
+
+  // حساب الحجم هنا، مش برا الدالة
+  const isSmallScreen = window.innerWidth <= 768;
+
   return `
-        <div class="project-item" id="${project.id}">
-            <div class="project-content">
+    <div class="project-item" id="${project.id}">
+        <div class="project-content">
             <div class="project-head">
-                <h2 class="project-title"> ${project.title}<br/> <span>${
-    project.subtitle
-  } </h2>
-                        
-                  </div>
-                <p class="project-description">${project.description}</p>
-                <dl class="project-details">
-                    <dt>Location:</dt>
-                    <dd>${project.location}</dd>
-                    <dt>Year:</dt>
-                    <dd>${project.year}</dd>
-                    <dt>Client:</dt>
-                    <dd>${project.client}</dd>
-                </dl>
+                <h2 class="project-title">${project.title}<br/> 
+                  <span>${project.subtitle}</span>
+                </h2>
             </div>
-            <div class="project-gallery">
-                ${project.images
-                  .map(
-                    (img, imgIndex) => `
-                    <div class="gallery-item ${
-                      imgIndex === specificIndex ? "highlighted" : ""
-                    }" data-project="${index}" data-index="${imgIndex}">
-                        <img src="${img}" alt="${project.title} - Image ${
-                      imgIndex + 1
-                    }">
-                    </div>
-                `
-                  )
-                  .join("")}
-            </div>
+            <dl class="project-details">
+                <dt>Location :</dt>
+                <dd>${project.location}</dd>
+                <dt>Scope of Work :</dt>
+                <dd>${project.scopeOfWork}</dd>
+                <dt>Client :</dt>
+                <dd>${project.client}</dd>
+                <dt>Main Contractor : </dt>
+                <dd>${project.mainContractor}</dd>
+            </dl>
         </div>
-    `;
+        <div class="project-gallery">
+            ${project.images
+              .map((img, imgIndex) => {
+                const classes = [];
+
+                // نستخدم small أو large حسب الحجم
+                if (
+                  imgIndex ===
+                  (isSmallScreen
+                    ? highlight.right?.small
+                    : highlight.right?.large)
+                )
+                  classes.push("highlight-right");
+                if (
+                  imgIndex ===
+                  (isSmallScreen
+                    ? highlight.left?.small
+                    : highlight.left?.large)
+                )
+                  classes.push("highlight-left");
+
+                return `
+                  <div class="gallery-item ${classes.join(" ")}" 
+                       data-project="${index}" 
+                       data-index="${imgIndex}">
+                      <img src="${img}" alt="${project.title} - Image ${
+                  imgIndex + 1
+                }">
+                  </div>
+                `;
+              })
+              .join("")}
+        </div>
+    </div>
+  `;
 }
 
 // Initialize projects section
