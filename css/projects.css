@@ -97,21 +97,6 @@ span {
   gap: 0.5rem;
 }
 
-.gallery-item.highlight-right img {
-  border-bottom-right-radius: 50px;
-}
-
-.gallery-item.highlight-left img {
-  border-bottom-left-radius: 50px;
-}
-
-@media (max-width: 768px) {
-  .gallery-item.highlight-left img {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 50px;
-  }
-}
-
 .gallery-item {
   position: relative;
   aspect-ratio: 4/3;
@@ -255,8 +240,8 @@ span {
     #459e55,
     #dab03d
   ); /* تدرج لوني من الأخضر الفاتح إلى الأخضر الداكن */
-  -webkit-background-clip: text; /* لتطبيق التدرج على النص */
   color: transparent;
+  -webkit-background-clip: text;
 }
 
 .client-logo {
