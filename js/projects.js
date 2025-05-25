@@ -138,15 +138,24 @@ function createProjectHTML(project, index) {
                 </h2>
             </div>
             <dl class="project-details">
-                <dt>Location :</dt>
-                <dd>${project.location}</dd>
-                <dt>Scope of Work :</dt>
-                <dd>${project.scopeOfWork}</dd>
-                <dt>Client :</dt>
-                <dd>${project.client}</dd>
-                <dt>Main Contractor : </dt>
-                <dd>${project.mainContractor}</dd>
-            </dl>
+  <div class="project-label">
+    <dt>Location :</dt>
+    <dd>${project.location}</dd>
+  </div>
+  <div class="project-label">
+    <dt>Scope of Work :</dt>
+    <dd>${project.scopeOfWork}</dd>
+  </div>
+  <div class="project-label">
+    <dt>Client :</dt>
+    <dd>${project.client}</dd>
+  </div>
+  <div class="project-label">
+    <dt>Main Contractor :</dt>
+    <dd>${project.mainContractor}</dd>
+  </div>
+</dl>
+
         </div>
         <div class="project-gallery">
             ${project.images
