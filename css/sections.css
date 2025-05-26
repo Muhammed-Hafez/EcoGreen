@@ -94,7 +94,8 @@ hr.visible {
 }
 
 .about-head img {
-  height: 48px;
+  width: 40px;
+  height: 40px;
 }
 
 .about-grid {
