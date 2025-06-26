@@ -40,10 +40,10 @@ const projects = [
     mainContractor: "Almasa Hotel Nasr City",
     client: "Private Owner",
     images: [
-      "./images/Swr elprojects/Alriyada Uni/1.jpg",
-      "./images/Swr elprojects/Alriyada Uni/2.jpg",
-      "./images/Swr elprojects/Alriyada Uni/3.jpg",
-      "./images/Swr elprojects/Alriyada Uni/4.jpg",
+      "./images/Swr elprojects/masa-villa/1.jpeg",
+      "./images/Swr elprojects/masa-villa/2.jpeg",
+      "./images/Swr elprojects/masa-villa/3.jpeg",
+      "./images/Swr elprojects/masa-villa/4.jpeg",
     ],
   },
   {
@@ -103,10 +103,10 @@ const projects = [
     mainContractor: "Madinet Elsadat Co. for Private University",
     client: "Al Riyada University",
     images: [
-      "./images/Swr elprojects/Eagle/1.jpg",
-      "./images/Swr elprojects/Eagle/2.jpg",
-      "./images/Swr elprojects/Eagle/3.jpg",
-      "./images/Swr elprojects/Eagle/4.jpg",
+      "./images/Swr elprojects/main-gate/1.jpeg",
+      "./images/Swr elprojects/main-gate/2.jpeg",
+      "./images/Swr elprojects/main-gate/4.jpeg",
+      "./images/Swr elprojects/main-gate/3.jpeg",
     ],
   },
 ];
