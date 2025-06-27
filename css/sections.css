@@ -185,6 +185,7 @@ hr.visible {
 .product-card p {
   padding: 0 1rem 1rem;
   font-family: "Acumin", sans-serif;
+  font-size: 22px;
 }
 
 /* تفعيل التأثير عند ظهور العنصر */
