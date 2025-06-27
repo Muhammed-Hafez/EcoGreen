@@ -5,6 +5,7 @@
   --text-color: #2d3748;
   --light-color: #f7fafc;
   --dark-color: #1a202c;
+  --linear: linear-gradient(to right, #459e55, #dab03d);
 }
 
 * {
