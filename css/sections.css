@@ -90,7 +90,7 @@
 hr {
   width: 20%; /* عرض الخط */
   margin: 1rem auto; /* مساحة حول الخط */
-  border: 1px solid #0b7336; /* اللون والسمك */
+  border: 0.5px solid #12b355; /* اللون والسمك */
   transform-origin: center; /* نقطة الأصل للحركة */
   opacity: 0; /* الخط غير مرئي افتراضيًا */
   transform: scaleX(0); /* تصغير الخط افتراضيًا */
@@ -225,6 +225,11 @@ hr.visible {
   font-size: 1rem;
   color: #0e9646;
   cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 0; /* يلغي الزوايا */
+  -webkit-appearance: none; /* يلغي شكل الزر الافتراضي في Safari */
+  appearance: none;
 }
 
 .contact-wrapper p {
@@ -258,10 +263,15 @@ hr.visible {
 
 .contact-wrapper .btn-secondry {
   position: absolute;
+  background-color: #fff;
+  border: none;
   top: 60%;
   font-size: 20px;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 0; /* يلغي الزوايا */
+  -webkit-appearance: none; /* يلغي شكل الزر الافتراضي في Safari */
+  appearance: none;
 }
 
 @media (max-width: 768px) {
