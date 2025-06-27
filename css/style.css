@@ -52,6 +52,3 @@ body {
 .btn-primary:hover {
   background-color: var(--secondary-color);
 }
-
-@media (max-width: 2650px) {
-}

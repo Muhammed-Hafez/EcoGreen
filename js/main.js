@@ -43,13 +43,9 @@ const observerP = new IntersectionObserver(
   { threshold: 0.1 }
 ); // 0.1 تعني أن العنصر سيظهر عندما يظهر 10% من مساحته في الشاشة
 
-// مراقبة المصفوفة والبطاقات
-observerP.observe(productGrid);
-productCards.forEach((card) => observerP.observe(card));
-
 $(document).ready(function () {
   $(".sliderC").slick({
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -60,13 +56,39 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
         },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 3,
+        },
+      },
+    ],
+  });
+});
+
+$(document).ready(function () {
+  $(".sliderP").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
         },
       },
     ],

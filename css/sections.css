@@ -147,15 +147,14 @@ hr.visible {
   transform: translateX(0); /* إلغاء التحريك عند التفعيل */
 }
 
-/* Products Section */
-/* إعدادات الشبكة (Grid) */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  opacity: 0; /* يجعل المصفوفة غير مرئية عند تحميل الصفحة */
-  transform: translateY(50px); /* تحريك المصفوفة للأعلى عند تحميل الصفحة */
-  transition: opacity 1s ease, transform 1s ease; /* تأثير انسيابي */
+.product-slider {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  width: 100%;
 }
 
 /* إعدادات البطاقة (Card) */
@@ -163,30 +162,28 @@ hr.visible {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
-  opacity: 0; /* إخفاء البطاقة عند تحميل الصفحة */
-  transform: translateY(20px); /* تحريك البطاقة من الأسفل */
-  transition: opacity 1s ease, transform 1s ease; /* تأثير انسيابي */
 }
 
 /* الصورة داخل البطاقة */
 .product-card img {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-/* العنوان داخل البطاقة */
-.product-card h3 {
-  color: var(--primary-color);
   padding: 1rem;
 }
 
-/* الوصف داخل البطاقة */
-.product-card p {
-  padding: 0 1rem 1rem;
-  font-family: "Acumin", sans-serif;
-  font-size: 22px;
+.swiper-wrapper {
+  padding: 0 !important;
 }
+.swiper-slide {
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+.swiper-slide img {
+  width: 100%;
+  display: block;
+}
+
+/* الوصف داخل البطاقة */
 
 /* تفعيل التأثير عند ظهور العنصر */
 .product-grid.visible,
