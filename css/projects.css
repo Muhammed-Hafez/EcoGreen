@@ -91,10 +91,10 @@ span {
 }
 
 .project-gallery {
-  margin-top: 1.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
+  align-self: center;
 }
 
 .gallery-item {

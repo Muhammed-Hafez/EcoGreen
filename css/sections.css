@@ -28,18 +28,29 @@
 }
 
 .image-container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  text-align: center;
-  background: #fff;
-  object-fit: cover;
+  padding-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .image-container img {
   width: 100%;
-  height: 240px;
-  object-fit: cover;
+  height: auto;
+  display: block;
+}
+
+.project-info {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-info {
@@ -48,7 +59,7 @@
 
 .project-info p {
   font-family: "AcuminExtraLight", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 24px;
   margin: 10px 0;
   text-align: center;
@@ -56,7 +67,7 @@
 
 .btn-primary {
   font-style: italic;
-  margin: 10px 0 0;
+  /* margin: 10px 0 0; */
   padding: 10px 20px;
   font-size: 1rem;
   color: #0e9646;
@@ -375,6 +386,9 @@ hr.visible {
 }
 
 @media (max-width: 768px) {
+  .image-container {
+    box-shadow: none;
+  }
   .image-container img {
     height: auto;
   }
