@@ -40,10 +40,11 @@ const projects = [
     mainContractor: "Almasa Hotel Nasr City",
     client: "Private Owner",
     images: [
-      "./images/Swr elprojects/masa-villa/1.jpeg",
-      "./images/Swr elprojects/masa-villa/2.jpeg",
-      "./images/Swr elprojects/masa-villa/3.jpeg",
       "./images/Swr elprojects/masa-villa/4.jpeg",
+      "./images/Swr elprojects/masa-villa/2.jpeg",
+
+      "./images/Swr elprojects/masa-villa/3.jpeg",
+      "./images/Swr elprojects/masa-villa/1.jpeg",
     ],
   },
   {
